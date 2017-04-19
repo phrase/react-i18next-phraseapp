@@ -1,0 +1,17 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "outFile": "dist/react-i18next-phraseapp.js"
+  }
+}

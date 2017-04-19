@@ -1,7 +1,15 @@
-import React, { Component, PropTypes, Children } from 'react';
+import * as React from 'react';
+import { Component, Children } from 'react';
+import { PropTypes } from 'prop-types';
 
-class PhraseAppProvider extends React.Component {
-  constructor(props, context) {
+export interface PhraseAppProviderProps { config: Object; }
+
+export default class PhraseAppProvider extends React.Component<PhraseAppProviderProps, {}> {
+  phraseappConfig: any;
+  public static childContextTypes: any;
+  public static propTypes: any;
+
+  constructor(props: PhraseAppProviderProps, context: any) {
     super(props, context);
     this.phraseappConfig = props.config;
   }
@@ -10,8 +18,8 @@ class PhraseAppProvider extends React.Component {
     return { phraseappConfig: this.phraseappConfig };
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.phraseappConfig !== nextProps.phraseappConfig) {
+  componentWillReceiveProps(nextProps: PhraseAppProviderProps) {
+    if (this.props.config !== nextProps.config) {
       throw new Error('[react-i18next-phraseapp][PhraseAppProvider] does not support changing the phraseapp config object');
     }
   }
@@ -31,4 +39,3 @@ PhraseAppProvider.childContextTypes = {
   phraseappConfig: PropTypes.object.isRequired
 }
 
-export default PhraseAppProvider;

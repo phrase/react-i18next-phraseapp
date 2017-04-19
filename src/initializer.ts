@@ -1,13 +1,20 @@
-import React, { Component, PropTypes } from 'react';
+import * as React from 'react';
+import { Component } from 'react';
+import { PropTypes } from 'prop-types';
 
-class PhraseAppInitializer extends React.Component {
-  constructor(props, context) {
+export interface PhraseAppInitializerProps { config: Object; }
+
+export default class PhraseAppInitializer extends React.Component<PhraseAppInitializerProps, {}> {
+  phraseappConfig: any;
+  public static contextTypes: any;
+
+  constructor(props: PhraseAppInitializerProps, context: any) {
     super(props, context);
     this.phraseappConfig = context.phraseappConfig;
   }
 
   componentDidMount() {
-    if (window.PHRASEAPP_ENABLED) {
+    if ((<any>window).PHRASEAPP_ENABLED) {
       const phraseapp = document.createElement('script');
       phraseapp.type = 'text/javascript';
       phraseapp.async = true;
@@ -22,12 +29,10 @@ class PhraseAppInitializer extends React.Component {
   }
 
   render() {
-    return false;
+    return null;
   }
 }
 
 PhraseAppInitializer.contextTypes = {
   phraseappConfig: PropTypes.object
-};
-
-export default PhraseAppInitializer;
+}

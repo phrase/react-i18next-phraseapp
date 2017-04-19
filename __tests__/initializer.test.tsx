@@ -1,6 +1,6 @@
-import React from 'react';
-import PhraseAppInitializer from './initializer';
-import renderer from 'react-test-renderer'
+import * as React from "react";
+import * as renderer from 'react-test-renderer';
+import PhraseAppInitializer from '../src/initializer';
 
 test('loads the In-Context Editor JS if PhraseApp is enabled', () => {
   const config = {};
@@ -15,6 +15,7 @@ test('loads the In-Context Editor JS if PhraseApp is enabled', () => {
   component = renderer.create(
     <PhraseAppInitializer phraseappConfig={config} />
   )
+  expect(document.getElementsByTagName('script').length).toBe(1);
   expect(document.getElementsByTagName('script')[0].src)
     .toMatch(/https:\/\/phraseapp.com\/assets\/in-context-editor\/2.0\/app.js\?[\d]/);
 })
