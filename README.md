@@ -47,6 +47,13 @@ Done.
 
 You can find a demo project on [GitHub](https://github.com/phrase/react-i18next-phraseapp-demo).
 
+## Test
+
+Run tests via jest:
+
+    $ npm test
+
+
 ## Build
 
     $ npm run build
