@@ -15,5 +15,6 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"]
-  }
+  },
+  externals: ["react", "prop-types", "react-i18next"]
 };
