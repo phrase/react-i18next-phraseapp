@@ -1,5 +1,7 @@
 # react-i18next-phraseapp
 
+[![Build Status](https://travis-ci.org/phrase/react-i18next-phraseapp.png)](https://travis-ci.org/phrase/react-i18next-phraseapp)
+
 This library lets you integrate the [PhraseApp In-Context Editor](https://phraseapp.com/docs/guides/in-context-editor/) easily with your React apps localized with [react-i18next](https://github.com/i18next/react-i18next).
 
 ## Installation
