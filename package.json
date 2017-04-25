@@ -31,6 +31,10 @@
     "react-dom": "^15.4.2",
     "react-i18next": "^2.2.3"
   },
+  "bugs": {
+    "url" : "https://github.com/phrase/react-i18next-phraseapp/issues",
+    "email" : "support@phraseapp.com"
+  },
   "devDependencies": {
     "@types/react": "^15.0.22",
     "@types/react-dom": "^0.14.23",
