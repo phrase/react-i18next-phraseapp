@@ -4,8 +4,10 @@
   "description": "Connect react-i18next with the PhraseApp In-Context Editor",
   "main": "./dist/react-i18next-phraseapp.js",
   "scripts": {
+    "clean": "rimraf dist/",
     "build": "webpack --config webpack.config.js",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,7 @@
     "react-addons-test-utils": "^15.4.2",
     "react-test-renderer": "^15.4.2",
     "regenerator-runtime": "^0.10.3",
+    "rimraf": "^2.6.1",
     "ts-jest": "^19.0.10",
     "typescript": "^2.2.2",
     "webpack": "^2.3.3"
