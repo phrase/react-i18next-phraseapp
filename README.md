@@ -55,7 +55,10 @@ Run tests via jest:
 
     $ npm test
 
-
 ## Build
 
     $ npm run build
+
+## Acknoledgements
+
+Thank you to [choffmeister](https://github.com/choffmeister) for pointing us in the right direction.
