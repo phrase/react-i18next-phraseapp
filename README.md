@@ -17,31 +17,35 @@ Then, replace all calls to `translate()` with the `translate` function provided 
 
 Now, wrap your application with the `PhraseAppProvider`:
 
-    import { I18nextProvider } from 'react-i18next';
-    import { PhraseAppProvider } from 'react-i18next-phraseapp';
+```js
+import { I18nextProvider } from 'react-i18next';
+import { PhraseAppProvider } from 'react-i18next-phraseapp';
 
-    ReactDOM.render(
-      <I18nextProvider i18n={ i18n }>
-        <PhraseAppProvider config={ window.PHRASEAPP_CONFIG }>
-          <MyApp />
-        </PhraseAppProvider>
-      </I18nextProvider>,
-      document.getElementById('root')
-    );
+ReactDOM.render(
+  <I18nextProvider i18n={ i18n }>
+    <PhraseAppProvider config={ window.PHRASEAPP_CONFIG }>
+      <MyApp />
+    </PhraseAppProvider>
+  </I18nextProvider>,
+  document.getElementById('root')
+);
+```
 
 As the last step, provide the PhraseApp configuration **before** your app is mounted:
 
-    <div id="root"></div>
-    <script>
-      window.PHRASEAPP_ENABLED = true;
-      window.PHRASEAPP_CONFIG = {
-        projectId: "<project-id>",
-        prefix: "[[__",
-        suffix: "__]]",
-        fullReparse: true
-      };
-    </script>
-    <script src="bundle.js"></script>
+```js
+ <div id="root"></div>
+ <script>
+   window.PHRASEAPP_ENABLED = true;
+   window.PHRASEAPP_CONFIG = {
+     projectId: "<project-id>",
+     prefix: "[[__",
+     suffix: "__]]",
+     fullReparse: true
+   };
+ </script>
+ <script src="bundle.js"></script>
+```
 
 Done.
 
@@ -59,6 +63,6 @@ Run tests via jest:
 
     $ npm run build
 
-## Acknoledgements
+## Acknowledgements
 
 Thank you to [choffmeister](https://github.com/choffmeister) for pointing us in the right direction.
