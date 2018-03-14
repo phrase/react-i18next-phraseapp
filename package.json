@@ -57,7 +57,7 @@
     "react-i18next": ">=2.2.3"
   },
   "files": [
-    "dist/react-i18n-phraseapp.js"
+    "dist/react-i18next-phraseapp.js"
   ],
   "jest": {
     "moduleFileExtensions": [
