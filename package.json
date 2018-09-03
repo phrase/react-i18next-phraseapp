@@ -4,6 +4,7 @@
   "description": "Connect react-i18next with the PhraseApp In-Context Editor",
   "homepage": "https://phraseapp.com",
   "main": "./dist/react-i18next-phraseapp.js",
+  "typings": "./dist/index.d.ts",
   "scripts": {
     "clean": "rimraf dist/",
     "dist": "webpack",

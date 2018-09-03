@@ -12,6 +12,8 @@
     "target": "es5",
     "module": "commonjs",
     "jsx": "react",
-    "outFile": "dist/react-i18next-phraseapp.js"
+    "outFile": "dist/react-i18next-phraseapp.js",
+    "declaration": true,
+    "declarationDir": "dist"
   }
 }
