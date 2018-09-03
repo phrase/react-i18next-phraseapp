@@ -1,6 +1,6 @@
 {
   "name": "react-i18next-phraseapp",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Connect react-i18next with the PhraseApp In-Context Editor",
   "homepage": "https://phraseapp.com",
   "main": "./dist/react-i18next-phraseapp.js",
@@ -62,7 +62,7 @@
     "react-i18next": ">=2.2.3"
   },
   "files": [
-    "dist/react-i18next-phraseapp.js"
+    "dist"
   ],
   "jest": {
     "moduleFileExtensions": [
