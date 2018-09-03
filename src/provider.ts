@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component, Children } from 'react';
-import { PropTypes } from 'prop-types';
+import { object, element } from 'prop-types';
 
 export interface PhraseAppProviderProps { config: Object; }
 
@@ -31,11 +31,11 @@ export default class PhraseAppProvider extends React.Component<PhraseAppProvider
 }
 
 PhraseAppProvider.propTypes = {
-  config: PropTypes.object.isRequired,
-  children: PropTypes.element.isRequired
+  config: object.isRequired,
+  children: element.isRequired
 }
 
 PhraseAppProvider.childContextTypes = {
-  phraseappConfig: PropTypes.object.isRequired
+  phraseappConfig: object.isRequired
 }
 

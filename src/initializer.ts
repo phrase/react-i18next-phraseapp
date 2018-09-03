@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import { PropTypes } from 'prop-types';
+import { object } from 'prop-types';
 
 export interface PhraseAppInitializerProps { config: Object; }
 
@@ -34,5 +34,5 @@ export default class PhraseAppInitializer extends React.Component<PhraseAppIniti
 }
 
 PhraseAppInitializer.contextTypes = {
-  phraseappConfig: PropTypes.object
+  phraseappConfig: object
 }
