@@ -31,11 +31,13 @@
     "email": "support@phraseapp.com"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.2",
     "@types/prop-types": "^15.5.5",
     "@types/react": "^15.6.19",
     "@types/react-dom": "^0.14.23",
     "@types/react-i18next": "^1.7.12",
     "@types/react-test-renderer": "^15.5.7",
+    "add": "^2.0.6",
     "awesome-typescript-loader": "^3.5.0",
     "debug": "^2.6.9",
     "enzyme": "^2.8.0",
