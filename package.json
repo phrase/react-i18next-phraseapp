@@ -9,7 +9,7 @@
     "clean": "rm -rf dist/",
     "dist": "npm run clean && webpack-cli --mode production",
     "test": "jest",
-    "prepare": "npm run clean && npm run dist"
+    "prepublishOnly": "npm run clean && npm run dist"
   },
   "repository": {
     "type": "git",
@@ -38,7 +38,6 @@
     "@types/react-i18next": "^1.7.12",
     "@types/react-test-renderer": "^15.5.7",
     "add": "^2.0.6",
-    "awesome-typescript-loader": "^3.5.0",
     "debug": "^2.6.9",
     "enzyme": "^2.8.0",
     "hoist-non-react-statics": "^1.2.0",
@@ -54,6 +53,7 @@
     "regenerator-runtime": "^0.10.3",
     "sshpk": "^1.13.2",
     "ts-jest": "^23.1.4",
+    "ts-loader": "^5.1.1",
     "typescript": "^3.0.3",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0"
