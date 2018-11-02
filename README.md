@@ -12,8 +12,8 @@ Install the package via npm:
 
 Then, replace all calls to `translate()` with the `translate` function provided by `react-i18next-phraseapp`:
 
-    - import { translate } from 'react-i18next';
-    + import { translate } from 'react-i18next-phraseapp';
+    - import { withNamespaces } from 'react-i18next';
+    + import { withNamespaces } from 'react-i18next-phraseapp';
 
 Now, wrap your application with the `PhraseAppProvider`:
 
