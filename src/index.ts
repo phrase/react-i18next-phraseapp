@@ -1,9 +1,6 @@
-import translate from './translate';
 import PhraseAppInitializer from './initializer';
 import PhraseAppProvider from './provider';
+import withNamespaces from './with_namespaces';
 
-export {
-  translate,
-  PhraseAppInitializer,
-  PhraseAppProvider,
-}
+export { withNamespaces, PhraseAppInitializer, PhraseAppProvider, };
+
