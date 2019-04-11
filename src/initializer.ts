@@ -14,7 +14,7 @@ export default class PhraseAppInitializer extends React.Component<PhraseAppIniti
   }
 
   componentDidMount() {
-    if ((<any>window).PHRASEAPP_ENABLED) {
+    if ((typeof window !== 'undefined' && typeof document !== 'undefined') && (<any>window).PHRASEAPP_ENABLED) {
       const phraseapp = document.createElement('script');
       phraseapp.type = 'text/javascript';
       phraseapp.async = true;

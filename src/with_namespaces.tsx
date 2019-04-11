@@ -3,7 +3,7 @@ import { object } from 'prop-types';
 import * as React from 'react';
 import { translate as translateI18next } from 'react-i18next';
 export default function withNamespaces(...args: any[]) {
-    if (!(window as any).PHRASEAPP_ENABLED) {
+    if ((typeof window !== 'undefined' && typeof document !== 'undefined') && !(window as any).PHRASEAPP_ENABLED) {
         return ((translateI18next as any)(...args));
     }
     else {
