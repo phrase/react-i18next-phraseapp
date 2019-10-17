@@ -1,8 +1,8 @@
 {
   "name": "react-i18next-phraseapp",
-  "version": "2.0.0",
-  "description": "Connect react-i18next with the PhraseApp In-Context Editor",
-  "homepage": "https://phraseapp.com",
+  "version": "2.0.1",
+  "description": "Connect react-i18next with the Phrase In-Context Editor",
+  "homepage": "https://phrase.com",
   "main": "./dist/react-i18next-phraseapp.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
@@ -16,6 +16,7 @@
     "url": "https://github.com/phrase/react-i18next-phraseapp.git"
   },
   "keywords": [
+    "phrase",
     "phraseapp",
     "i18n",
     "l10n",
@@ -24,11 +25,11 @@
     "localization",
     "translation"
   ],
-  "author": "Manuel Boy <support@phraseapp.com> (https://phraseapp.com)",
+  "author": "Phrase <support@phrase.com> (https://phrase.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/phrase/react-i18next-phraseapp/issues",
-    "email": "support@phraseapp.com"
+    "email": "support@phrase.com"
   },
   "devDependencies": {
     "@types/jest": "^23.3.14",
@@ -56,7 +57,7 @@
   },
   "peerDependencies": {
     "i18next": ">=7.1.3",
-    "react": "^15.4.2",
+    "react": ">=15.4.2",
     "react-i18next": ">=8.0.0"
   },
   "files": [
