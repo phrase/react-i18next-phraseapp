@@ -1,6 +1,5 @@
-import * as React from 'react';
-import { Component } from 'react';
 import { object } from 'prop-types';
+import * as React from 'react';
 
 export interface PhraseAppInitializerProps { config: Object; }
 
@@ -18,7 +17,7 @@ export default class PhraseAppInitializer extends React.Component<PhraseAppIniti
       const phraseapp = document.createElement('script');
       phraseapp.type = 'text/javascript';
       phraseapp.async = true;
-      phraseapp.src = ['https://', 'phraseapp.com/assets/in-context-editor/2.0/app.js?', new Date().getTime()].join('');
+      phraseapp.src = ['https://', 'phrase.com/assets/in-context-editor/2.0/app.js?', new Date().getTime()].join('');
       var s = document.getElementsByTagName('script')[0];
       if (s != undefined) {
         s.parentNode.insertBefore(phraseapp, s);
