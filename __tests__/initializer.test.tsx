@@ -17,5 +17,5 @@ test('loads the In-Context Editor JS if PhraseApp is enabled', () => {
   );
   expect(document.getElementsByTagName('script').length).toBe(1);
   expect(document.getElementsByTagName('script')[0].src)
-    .toMatch(/https:\/\/phraseapp.com\/assets\/in-context-editor\/2.0\/app.js\?[\d]/);
+    .toMatch(/https:\/\/app.phrase.com\/assets\/in-context-editor\/2.0\/app.js\?[\d]/);
 });
