@@ -6,6 +6,7 @@
   "main": "./dist/react-i18next-phraseapp.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "clean": "rm -rf dist/",
     "dist": "npm run clean && webpack-cli --mode production",
     "test": "jest",
@@ -25,6 +26,9 @@
     "localization",
     "translation"
   ],
+  "resolutions": {
+    "minimist": "0.2.1"
+  },
   "author": "Phrase <support@phrase.com> (https://phrase.com)",
   "license": "MIT",
   "bugs": {
@@ -40,18 +44,19 @@
     "@types/react-test-renderer": "^15.5.8",
     "hoist-non-react-statics": "^1.2.0",
     "i18next": "^7.1.3",
-    "jest": "^24.9.0",
+    "jest": "^26.0.1",
     "lodash": ">=4.17.11",
     "merge": ">=1.2.1",
+    "npm-force-resolutions": "0.0.3",
     "prop-types": "^15.7.2",
     "react": "^15.6.2",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-i18next": "^2.2.3",
     "react-test-renderer": "^15.6.2",
-    "ts-jest": "^24.1.0",
+    "ts-jest": "^26.0.0",
     "ts-loader": "^5.4.5",
-    "typescript": "^3.5.1",
+    "typescript": "^3.9.3",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10"
   },

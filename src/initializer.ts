@@ -23,7 +23,7 @@ export default class PhraseAppInitializer extends React.Component<PhraseAppIniti
       if (s != undefined) {
         s.parentNode.insertBefore(phraseapp, s);
       } else {
-        document.insertBefore(phraseapp, null);
+        document.body.insertAdjacentElement('afterbegin', phraseapp);
       }
     }
   }
