@@ -6,7 +6,8 @@
   "main": "./dist/react-i18next-phraseapp.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
+    "//postshrinkwrap": "based on https://github.com/rogeriochaves/npm-force-resolutions/issues/10",
+    "postshrinkwrap": "npx --quiet npm-force-resolutions && npm install --no-package-lock --no-audit --no-fund --no-progress --silent",
     "clean": "rm -rf dist/",
     "dist": "npm run clean && webpack-cli --mode production",
     "test": "jest",
