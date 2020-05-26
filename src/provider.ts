@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Component, Children } from 'react';
+import { Children } from 'react';
 import { object, element } from 'prop-types';
 
 export interface PhraseAppProviderProps { config: Object; }
