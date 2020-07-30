@@ -1,6 +1,6 @@
 # react-i18next-phraseapp
 
-[![Build Status](https://travis-ci.org/phrase/react-i18next-phraseapp.png)](https://travis-ci.org/phrase/react-i18next-phraseapp)
+![Build status](https://github.com/phrase/react-i18next-phraseapp/workflows/Test/badge.svg)
 
 This library lets you integrate the [PhraseApp In-Context Editor](https://help.phraseapp.com/translate-website-and-app-content/use-in-context-editor-to-translate/translate-directly-on-your-website) easily with your React apps localized with [react-i18next](https://github.com/i18next/react-i18next).
 
