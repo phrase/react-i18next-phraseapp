@@ -1,7 +1,7 @@
 # DEPRECATED react-i18next-phraseapp
 
 ![Build status](https://github.com/phrase/react-i18next-phraseapp/workflows/Test/badge.svg)
-[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+[![No Maintenance Intended](https://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 > This package has been deprecated in favor of [I18next Phrase In-Context Editor Post Processor](https://www.npmjs.com/package/i18next-phrase-in-context-editor-post-processor). Please have a look at [the documentation](https://phrase.github.io/i18next-phrase-in-context-editor-post-processor/examples/#react-i18next) for examples on how it can be used with React applications.
 
