@@ -1,7 +1,7 @@
 {
   "name": "react-i18next-phraseapp",
-  "version": "2.0.2",
-  "description": "Connect react-i18next with the Phrase In-Context Editor",
+  "version": "2.0.3",
+  "description": "DEPRECATED ⛔️ Connect react-i18next with the Phrase In-Context Editor",
   "homepage": "https://phrase.com",
   "main": "./dist/react-i18next-phraseapp.js",
   "typings": "./dist/index.d.ts",
@@ -18,6 +18,7 @@
     "url": "https://github.com/phrase/react-i18next-phraseapp.git"
   },
   "keywords": [
+    "deprecated",
     "phrase",
     "phraseapp",
     "i18n",
